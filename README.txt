@@ -1,2 +1,1 @@
-This is a test
-test2
+This project is testing Ansible with Arista
