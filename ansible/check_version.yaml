@@ -1,0 +1,21 @@
+---
+- hosts: switches
+  gather_facts: 'no'
+  # Run Ansible on the local server using CLI or eAPI to the node
+  connection: local
+  vars:
+    eapi_conn
+      host: '{{ inventory_hostname }}'
+      username: admin
+      password: admin
+      transport: eapi
+      use_ssl: true
+      validate_certs: false
+      # If an enable password is required"
+      # authorise: yes
+      # auth password: <enable secret>
+  tasks:
+    - name: Get version
+      eos_command:
+        commands='show version'
+        provider={{ eapi_conn }}
