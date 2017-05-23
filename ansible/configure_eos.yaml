@@ -1,0 +1,9 @@
+---
+- hosts: leaf_switches
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: Configure VLANs
+    eos_config:
+      src:
