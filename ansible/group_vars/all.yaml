@@ -1,0 +1,11 @@
+# group_vars/all.yaml
+eos_connection:
+  host: "{{ inventory_hostname }}"
+  username: admin
+  password: admin
+  transport: eapi
+  use_ssl: true
+  validate_certs: false
+  # If an enable password is required"
+  # authorise: yes
+  # auth password: <enable secret>

@@ -6,4 +6,11 @@
   tasks:
   - name: Configure VLANs
     eos_config:
-      src:
+      src: vlans.j2
+      provider: "{{ eos_connection }}"
+  
+  - name: Configure Eth Interfaces
+    eos_config:
+      src: intf.j2
+      provider: "{{ eos_connection }}"
+      
