@@ -1,7 +1,7 @@
 interfaces:
  - name: Ethernet1
    description: [BGP]Spine1
-   address: 10.0.0.5/31
+   address: 10.0.0.4/31
  - name: Ethernet2
    description: [BGP]Spine2
-   address: 10.0.0.7/31
+   address: 10.0.0.6/31
