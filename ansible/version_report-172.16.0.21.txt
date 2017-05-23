@@ -1,0 +1,3 @@
+Hostname: 172.16.0.21
+Model: vEOS
+Software image version: 4.18.1-EFT2-4337100.EOS4181EFT2
