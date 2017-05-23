@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-''' Redner a template '''
+''' Render a template '''
 
 from jinja2 import Template
 
