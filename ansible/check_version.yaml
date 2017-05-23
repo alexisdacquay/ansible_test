@@ -1,5 +1,5 @@
 ---
-- hosts: switches
+- hosts: leaf_switches
   gather_facts: 'no'
   # Run Ansible on the local server using CLI or eAPI to the node
   connection: local
